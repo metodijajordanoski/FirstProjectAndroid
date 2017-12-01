@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorGreen"
+    android:layout_height="match_parent"
+    tools:context="prvaaplikacija.vtoraaplikacija.Main4Activity">
+
+    <Button
+        android:id="@+id/btnConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="CHECK INTERNET CONNECTION"
+        android:textColor="#ffffff"
+        android:textSize="19dp"/>
+    <TextView
+        android:id="@+id/internetTextField"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/btnConnection"
+        android:background="@drawable/textbox4"
+        android:layout_marginRight="10dp"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:elegantTextHeight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity=""/>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="BACK"
+        android:textSize="17dp"
+        android:drawableLeft="@drawable/left_arrow"/>
+
+</RelativeLayout>

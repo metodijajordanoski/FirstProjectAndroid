@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/tretlayout"
+    android:layout_height="match_parent"
+    tools:context="prvaaplikacija.vtoraaplikacija.Main3Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/colorShadowGreen">
+
+        <Spinner
+            android:id="@+id/spinerGuest"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:text="EDIT USER"
+            android:id="@+id/btnEdit"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/spinerGuest"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            style="@style/Button2"/>
+        <Button
+            android:id="@+id/btnADD"
+            android:text="ADD USER"
+            style="@style/Button2"
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/spinerGuest"
+            android:layout_below="@id/btnEdit"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/tretlayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/textGender"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:text="Change Gender:"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="17dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGrupa"
+            android:layout_below="@+id/textGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorGreen"/>
+            <RadioButton
+                android:id="@+id/btnMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginLeft="15dp"
+                android:textColor="@color/colorGreen"/>
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imageGender"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/radioGrupa"
+            android:layout_width="230dp"
+            android:layout_height="210dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/imePrezime"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@color/transparentwhite"
+            android:layout_below="@id/radioGrupa"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/textInternet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageGender"
+            android:text="Internet not checked yet!"
+            android:textSize="17dp"/>
+        <Button
+            android:id="@+id/btnkonekcija"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/textInternet"
+            style="@style/Button2"
+            android:text="CHECK INTERNET CONNECTION"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
